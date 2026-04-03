@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#070b12" />
+    <meta
+      name="description"
+      content="Afag Ramazanova — Data Scientist. MS Data Science at Duke University. Experience in banking analytics, marketing science, and AI for compliance."
+    />
+    <title>Afag Ramazanova | Data Scientist &amp; AI Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="theme-ai">
+    <header class="site-header" id="top">
+      <nav class="nav" aria-label="Primary">
+        <a class="nav__brand" href="#home">Afag Ramazanova</a>
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          id="nav-toggle"
+        >
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="nav__toggle-bar"></span>
+          <span class="visually-hidden">Menu</span>
+        </button>
+        <ul class="nav__menu" id="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#life">Life</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="hero__inner">
+          <div class="hero__photo-wrap">
+            <img
+              class="hero__photo"
+              src="assets/hero.png"
+              alt="Portrait of Afag Ramazanova"
+              width="420"
+              height="420"
+            />
+          </div>
+          <div class="hero__content">
+            <p class="hero__eyebrow">Hello, I’m</p>
+            <h1 class="hero__title">Afag Ramazanova</h1>
+            <p class="hero__subtitle">
+              <span class="visually-hidden">Roles: Data Scientist and AI Engineer (animated below).</span>
+              <span class="hero__code" aria-hidden="true">// </span>
+              <span class="hero__role-line" aria-hidden="true">
+                <span class="hero__role-text" id="hero-role-text"></span><span class="hero__cursor">▍</span>
+              </span>
+            </p>
+            <p class="hero__meta">MS Data Science · Duke University </p>
+            <p class="hero__lede">
+              I build predictive models, analytics pipelines, and AI systems at the intersection of
+              finance, marketing, and responsible automation from credit risk and campaign measurement
+              to LLM based compliance tooling.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#contact">Get in touch</a>
+              <a class="btn btn--ghost" href="#projects">View projects</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="experience">
+        <div class="container">
+          <h2 class="section__title">Experience</h2>
+          <p class="section__kicker">Professional timeline</p>
+          <ol class="timeline">
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__head">
+                  <h3 class="timeline__role">AI for Compliance — Capstone Researcher</h3>
+                  <p class="timeline__org">BNY Mellon</p>
+                  <p class="timeline__meta">Remote · Aug 2025 – present</p>
+                </header>
+                <ul class="timeline__bullets">
+                  <li>
+                    Designed an AI-driven compliance report generation system using RAG and LLMs to
+                    automate AML regulatory narratives.
+                  </li>
+                  <li>
+                    Built a regulatory knowledge base from financial regulations (OFAC, FinCEN,
+                    FINRA, AML/KYC) enabling citation-based retrieval for compliance analysis.
+                  </li>
+                  <li>
+                    Developed a multi-agent architecture for ingestion, contradiction detection, and
+                    automated report drafting with human-in-the-loop validation.
+                  </li>
+                </ul>
+                <p class="timeline__tags">
+                  <span>LLMs</span><span>RAG</span><span>AML</span><span>Multi-agent</span>
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__head">
+                  <h3 class="timeline__role">Data Science Intern</h3>
+                  <p class="timeline__org">Citizens Bank</p>
+                  <p class="timeline__meta">Columbus, Ohio · May 2025 – Aug 2025</p>
+                </header>
+                <ul class="timeline__bullets">
+                  <li>
+                    Developed a predictive model for Smart Leads to estimate customer contactability
+                    using historical engagement data, prioritizing high-contactability leads.
+                  </li>
+                  <li>
+                    Performed end-to-end analysis of upper-funnel marketing investment and brand
+                    awareness using Adstock and S-curve transformations for media allocation insights.
+                  </li>
+                  <li>
+                    Built a regression model linking marketing investment to brand awareness and an
+                    automated simulation tool for hypothetical investment scenarios.
+                  </li>
+                </ul>
+                <p class="timeline__tags">
+                  <span>Python</span><span>Marketing mix</span><span>Regression</span
+                  ><span>Simulation</span>
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__head">
+                  <h3 class="timeline__role">Data Scientist</h3>
+                  <p class="timeline__org">Kapital Bank</p>
+                  <p class="timeline__meta">Baku, Azerbaijan · Aug 2022 – Aug 2024</p>
+                </header>
+                <ul class="timeline__bullets">
+                  <li>
+                    Developed and maintained predictive models including Probability of Default,
+                    income estimation, and debt-collection models for risk identification.
+                  </li>
+                  <li>
+                    Deployed models as an API service using Dataiku, cutting implementation time from
+                    about one month to three days.
+                  </li>
+                  <li>
+                    Introduced a new predictive model contributing to a 25% increase in the bank’s
+                    retail credit portfolio alongside stronger sales.
+                  </li>
+                  <li>
+                    Designed automated dashboards for daily performance tracking and faster response to
+                    issues (~30%), improving stakeholder engagement.
+                  </li>
+                </ul>
+                <p class="timeline__tags">
+                  <span>Python</span><span>SQL</span><span>Dataiku</span><span>Credit risk</span>
+                </p>
+              </article>
+            </li>
+
+            <li class="timeline__item">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <article class="timeline__card">
+                <header class="timeline__head">
+                  <h3 class="timeline__role">Data Scientist</h3>
+                  <p class="timeline__org">Unibank</p>
+                  <p class="timeline__meta">Baku, Azerbaijan · May 2021 – Aug 2022</p>
+                </header>
+                <ul class="timeline__bullets">
+                  <li>
+                    Built an automated reporting system that reduced manual work by 50% and improved
+                    response times for risk inquiries by 20%.
+                  </li>
+                  <li>
+                    Monitored loan and line-of-credit performance; insights supported a 10% reduction
+                    in the bank’s non-performing loan ratio.
+                  </li>
+                  <li>
+                    Supported model risk strategy by articulating model risk management benefits in an
+                    area not previously covered.
+                  </li>
+                </ul>
+                <p class="timeline__tags"><span>SQL</span><span>Python</span><span>Reporting</span></p>
+              </article>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section--alt reveal" id="education">
+        <div class="container">
+          <h2 class="section__title">Education</h2>
+          <p class="section__kicker">Degrees &amp; programs</p>
+          <div class="edu-grid">
+            <article class="edu-card edu-card--interactive">
+              <p class="edu-card__dates">2024 – May 2026 (expected)</p>
+              <h3 class="edu-card__degree">Master of Science in Data Science</h3>
+              <p class="edu-card__school">Duke University · North Carolina, US</p>
+              <p class="edu-card__detail">
+                GPA 3.9 · Full scholarship · Teaching assistant
+              </p>
+              <p class="edu-card__courses">
+                Coursework: Machine learning, data manipulation, statistical modeling, data
+                visualization, data engineering.
+              </p>
+            </article>
+            <article class="edu-card edu-card--interactive">
+              <p class="edu-card__dates">Sep 2016 – Jun 2021</p>
+              <h3 class="edu-card__degree">Bachelor’s degree in Economics</h3>
+              <p class="edu-card__school">Baku Engineering University · Baku, Azerbaijan</p>
+              <p class="edu-card__detail">GPA 3.8 · Full scholarship recipient</p>
+              <p class="edu-card__courses">
+                Summer school participant at Koblenz University of Applied Sciences.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--projects reveal" id="projects">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <p class="section__kicker">Selected work</p>
+          <p class="projects__intro">
+            Filter by focus area. Each card summarizes the problem, approach, and stack.
+          </p>
+          <div
+            class="projects-toolbar"
+            role="tablist"
+            aria-label="Filter projects by category"
+            id="projects-filters"
+          >
+            <button
+              type="button"
+              class="projects-filter is-active"
+              data-filter="all"
+              role="tab"
+              aria-selected="true"
+            >
+              All projects
+            </button>
+            <button type="button" class="projects-filter" data-filter="cloud-genai" role="tab" aria-selected="false">
+              Cloud &amp; GenAI
+            </button>
+            <button type="button" class="projects-filter" data-filter="banking" role="tab" aria-selected="false">
+              Banking &amp; Risk
+            </button>
+            <button type="button" class="projects-filter" data-filter="nlp" role="tab" aria-selected="false">
+              NLP &amp; analytics
+            </button>
+          </div>
+          <div class="projects-grid" id="projects-grid">
+            <a
+              class="project-card project-card--link"
+              data-category="cloud-genai"
+              href="https://github.com/Afag-Ramazanova/AskSQL-Natural-Language-to-SQL-query-converter"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="AskSQL — open GitHub repository"
+            >
+              <div class="project-card__top">
+                <span class="project-card__badge">Cloud · LLMs</span>
+                <h3 class="project-card__title">AskSQL</h3>
+                <p class="project-card__date">Dec 2024</p>
+              </div>
+              <p class="project-card__desc">
+                Microservice that turns natural language questions into SQL queries so analysts and
+                stakeholders can explore databases without writing SQL by hand.
+              </p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li>AWS RDS</li>
+                <li>Python</li>
+                <li>AWS Bedrock</li>
+                <li>AWS App Runner</li>
+              </ul>
+              <div class="project-card__footer">
+                <span class="project-card__type">End-to-end service</span>
+                <span class="project-card__cta">GitHub ↗</span>
+              </div>
+            </a>
+
+            <a
+              class="project-card project-card--link"
+              data-category="cloud-genai"
+              href="https://github.com/BNY-AI-for-Compliance-Team-Capstone/Agentic_BNY_AI_Compliance"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Multi-agent compliance reporting — open GitHub repository"
+            >
+              <div class="project-card__top">
+                <span class="project-card__badge">GenAI · Agents</span>
+                <h3 class="project-card__title">Multi-agent compliance reporting</h3>
+                <p class="project-card__date">BNY Mellon Capstone</p>
+              </div>
+              <p class="project-card__desc">
+                Agentic AI for financial compliance: LLM-driven reasoning, multi-agent orchestration,
+                synthetic data generation, and structured evaluation—so outputs are more consistent
+                and easier to audit in regulated settings.
+              </p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li>LLMs</li>
+                <li>Multi-agent</li>
+                <li>Python</li>
+                <li>Evaluation</li>
+              </ul>
+              <div class="project-card__footer">
+                <span class="project-card__type">Capstone · Research</span>
+                <span class="project-card__cta">GitHub ↗</span>
+              </div>
+            </a>
+
+            <a
+              class="project-card project-card--link"
+              data-category="banking"
+              href="https://github.com/Afag-Ramazanova/default_prediction_w-LR/tree/main"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Customer default prediction — open GitHub repository"
+            >
+              <div class="project-card__top">
+                <span class="project-card__badge">Credit risk</span>
+                <h3 class="project-card__title">Customer default prediction</h3>
+                <p class="project-card__date">Kapital Bank</p>
+              </div>
+              <p class="project-card__desc">
+                Probability-of-default model to support retail lending decisions, with strong
+                discrimination performance (GINI ~65%).
+              </p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Dataiku</li>
+                <li>EDA</li>
+              </ul>
+              <div class="project-card__footer">
+                <span class="project-card__type">Production modeling</span>
+                <span class="project-card__cta">GitHub ↗</span>
+              </div>
+            </a>
+
+            <a
+              class="project-card project-card--link"
+              data-category="banking"
+              href="https://www.kaggle.com/competitions/iba-ml1-data-hack"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Term deposit prediction — open Kaggle competition"
+            >
+              <div class="project-card__top">
+                <span class="project-card__badge">Retail banking</span>
+                <h3 class="project-card__title">Term deposit subscription prediction</h3>
+                <p class="project-card__date">2023</p>
+              </div>
+              <p class="project-card__desc">
+                Machine learning model to predict customer subscription rates for term deposits from
+                historical behavior and campaign data.
+              </p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li>Python</li>
+              </ul>
+              <div class="project-card__footer">
+                <span class="project-card__type">Classification</span>
+                <span class="project-card__cta">Kaggle ↗</span>
+              </div>
+            </a>
+
+            <a
+              class="project-card project-card--link"
+              data-category="nlp"
+              href="https://github.com/Afag-Ramazanova/analyzing_fashion_product_reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Fashion product reviews sentiment analysis — open GitHub repository"
+            >
+              <div class="project-card__top">
+                <span class="project-card__badge">NLP</span>
+                <h3 class="project-card__title">Fashion product reviews sentiment analysis</h3>
+                <p class="project-card__date">2022</p>
+              </div>
+              <p class="project-card__desc">
+                Sentiment analysis of fashion reviews to surface key product attributes and recurring
+                customer opinions from unstructured text.
+              </p>
+              <ul class="project-card__tags" aria-label="Technologies">
+                <li>Scikit-learn</li>
+                <li>Pandas</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+              </ul>
+              <div class="project-card__footer">
+                <span class="project-card__type">Text analytics</span>
+                <span class="project-card__cta">GitHub ↗</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt reveal" id="skills">
+        <div class="container">
+          <h2 class="section__title">Skills &amp; certifications</h2>
+          <p class="section__kicker">Tools and domains</p>
+          <div class="skills-layout">
+            <div class="skills-block">
+              <h3 class="skills-block__title">Languages &amp; platforms</h3>
+              <p class="skills-block__body">
+                Python, SQL, AWS, GitHub, RStudio, Tableau, Microsoft Office, SPSS Statistics,
+                Claude Code, Cursor, n8n
+              </p>
+            </div>
+            <div class="skills-block">
+              <h3 class="skills-block__title">Data manipulation &amp; visualization</h3>
+              <p class="skills-block__body">
+                Pandas, NumPy, Matplotlib, Seaborn, ggplot2, dplyr, tidyr
+              </p>
+            </div>
+            <div class="skills-block">
+              <h3 class="skills-block__title">Functional expertise</h3>
+              <p class="skills-block__body">
+                LLMs, agentic workflows, prompt engineering, regression, forecasting, data mining,
+                feature engineering, Agile, A/B testing, web scraping, CI/CD
+              </p>
+            </div>
+            <div class="skills-block">
+              <h3 class="skills-block__title">Soft skills</h3>
+              <p class="skills-block__body">
+                Problem-solving, critical thinking, communication, collaboration, time management and
+                prioritization
+              </p>
+            </div>
+            <div class="skills-block skills-block--full">
+              <h3 class="skills-block__title">Certifications</h3>
+              <div class="cert-grid">
+                <a
+                  class="cert-card"
+                  href="https://www.credly.com/badges/2e573bc3-826e-40d9-a25a-96f25313bb01"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="cert-card__issuer">Amazon Web Services</span>
+                  <span class="cert-card__name">AWS Certified Cloud Practitioner</span>
+                  <span class="cert-card__cta">
+                    <span class="cert-card__cta-icon" aria-hidden="true">↗</span>
+                    View credential on Credly
+                  </span>
+                </a>
+                <a
+                  class="cert-card"
+                  href="https://www.credly.com/badges/4fa2ca4f-03f7-4bf4-a9b8-10cc255bb8c3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="cert-card__issuer">Amazon Web Services</span>
+                  <span class="cert-card__name">AWS Certified AI Practitioner</span>
+                  <span class="cert-card__cta">
+                    <span class="cert-card__cta-icon" aria-hidden="true">↗</span>
+                    View credential on Credly
+                  </span>
+                </a>
+                <div class="cert-card cert-card--static">
+                  <span class="cert-card__issuer">Dataiku</span>
+                  <span class="cert-card__name">ML Practitioner</span>
+                  <span class="cert-card__note">Professional certification</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="life">
+        <div class="container">
+          <h2 class="section__title">Beyond the screen</h2>
+          <p class="section__kicker">Life &amp; interests</p>
+          <p class="life__intro">
+            Outside of models and code, I love <strong>traveling</strong>, <strong>hiking</strong>, and
+            <strong>extreme sports</strong>—anything that adds perspective, adrenaline, and fresh air to
+            the week.
+          </p>
+          <div class="life__grid">
+            <figure class="life__card">
+              <div class="life__img-wrap">
+                <img
+                  class="life__img"
+                  src="assets/personal-novruz.png"
+                  alt="Afag in traditional dress holding a tray of sprouted wheat semeni for Novruz, outdoors in spring"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+             
+            
+              </figcaption>
+            </figure>
+            <figure class="life__card">
+              <div class="life__img-wrap">
+                <img
+                  class="life__img"
+                  src="assets/personal-skydive.png"
+                  alt="Afag tandem skydiving over a coastline with thumbs up"
+                  width="800"
+                  height="600"
+                  loading="lazy"
+                />
+              </div>
+              
+                
+              </figcaption>
+            </figure>
+            <figure class="life__card">
+              <div class="life__img-wrap">
+                <img
+                  class="life__img"
+                  src="assets/personal-coast.png"
+                  alt="Afag sitting on a cliff overlooking the ocean on a sunny hike"
+                  width="600"
+                  height="800"
+                  loading="lazy"
+                />
+              </div>
+             
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--contact reveal" id="contact">
+        <div class="container container--narrow">
+          <h2 class="section__title">Get in touch</h2>
+          <p class="section__kicker">Contact</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Email</span>
+              <a href="mailto:afag.ramazanova@duke.edu">afag.ramazanova@duke.edu</a>
+            </li>
+            <li>
+              <span class="contact-list__label">Location</span>
+              <span>United States</span>
+            </li>
+            <li>
+              <span class="contact-list__label">LinkedIn</span>
+              <a
+                href="https://www.linkedin.com/in/afagramazanova/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Afag on LinkedIn</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year"></span> Afag Ramazanova. All rights reserved.</p>
+        <a class="site-footer__top" href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <div class="chat-dock" id="chat-dock">
+      <button
+        type="button"
+        class="chat-dock__fab"
+        id="chat-fab"
+        aria-expanded="false"
+        aria-controls="chat-panel"
+        aria-label="Open quick answers chat"
+      >
+        <span class="chat-dock__fab-icon" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 3C7.03 3 3 6.58 3 11c0 2.13.98 4.05 2.55 5.45L4 21l4.75-1.25A9.38 9.38 0 0012 19c4.97 0 9-3.58 9-8s-4.03-8-9-8z"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <circle cx="8.5" cy="11" r="1.25" fill="currentColor" />
+            <circle cx="12" cy="11" r="1.25" fill="currentColor" />
+            <circle cx="15.5" cy="11" r="1.25" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="chat-dock__fab-label">Ask</span>
+      </button>
+      <div
+        class="chat-dock__panel"
+        id="chat-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="chat-title"
+        hidden
+      >
+        <div class="chat-dock__head">
+          <div>
+            <h2 id="chat-title" class="chat-dock__title">Quick answers</h2>
+            <p class="chat-dock__sub">Questions about Afag’s background—powered by a local assistant (no data sent to external AI).</p>
+          </div>
+          <button type="button" class="chat-dock__close" id="chat-close" aria-label="Close chat">
+            ×
+          </button>
+        </div>
+        <div class="chat-dock__messages" id="chat-messages" role="log"></div>
+        <div class="chat-dock__chips" id="chat-chips" aria-label="Suggested questions"></div>
+        <form class="chat-dock__form" id="chat-form" autocomplete="off">
+          <label class="visually-hidden" for="chat-input">Your question</label>
+          <input
+            type="text"
+            class="chat-dock__input"
+            id="chat-input"
+            placeholder="Ask a quick question…"
+            maxlength="240"
+          />
+          <button type="submit" class="chat-dock__send">Send</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="main.js" defer></script>
+    <script src="chatbot.js" defer></script>
+  </body>
+</html>
