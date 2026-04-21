@@ -50,8 +50,8 @@
     if (/(unibank)/.test(q)) {
       return "At Unibank (May 2021–Aug 2022) she automated reporting, monitored credit performance, and contributed to model risk strategy.";
     }
-    if (/(project|asksql|bedrock|term deposit|sentiment|fashion|multi-agent|compliance reporting|capstone)/.test(q)) {
-      return "Projects include the BNY capstone repo (Agentic BNY AI Compliance on GitHub), AskSQL (NL→SQL on AWS), PD modeling, term deposits, and fashion sentiment analysis. See the Projects section.";
+    if (/(project|asksql|bedrock|term deposit|sentiment|fashion|multi-agent|compliance reporting|capstone|rag|enterprise q&a|knowledge base)/.test(q)) {
+      return "Projects include the BNY capstone repo, a multi-source RAG enterprise Q&A system, AskSQL (NL→SQL on AWS), PD modeling, term deposits, and fashion sentiment analysis. See the Projects section.";
     }
     if (/(skill|python|aws|tool|stack|tech|program)/.test(q)) {
       return "Python, SQL, AWS, Tableau, Dataiku, GitHub, RStudio, plus LLMs, agents, and prompt engineering. Certifications: AWS Cloud & AI Practitioner, Dataiku ML Practitioner (see Skills).";
@@ -131,12 +131,21 @@
     "bot"
   );
 
-  var openDelayMs = 450;
+  var openDelayMs = 6000;
   if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     openDelayMs = 0;
   }
 
-  setTimeout(function () {
-    openChat();
+  var autoOpenTimer = setTimeout(function () {
+    if (panel.hidden) {
+      openChat();
+    }
   }, openDelayMs);
+
+  fab.addEventListener("click", function () {
+    if (autoOpenTimer) {
+      clearTimeout(autoOpenTimer);
+      autoOpenTimer = null;
+    }
+  });
 })();
